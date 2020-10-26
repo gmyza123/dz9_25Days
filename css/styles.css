@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,100&family=Playfair+Display&display=swap');
+
+
+
+:root {
+	--font-Lato: 'Lato', sans-serif;
+	--font-Playfair: 'Playfair Display', serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+
+}
+
+
+/* Main Styles */
+.container{
+	max-width: 1400px;
+	width: 100%;
+	margin: 130px auto;
+	padding: 120px 8.5%;
+	box-shadow: 4px 0 68px 0 rgba(0, 0, 0, .1);
+}
+
+h1{
+	font-family: var(--font-Playfair);
+	font-size: 42px;
+	color: #171717;
+	margin-bottom: 25px;
+}
+
+.t{
+	color: #171717;
+	font-size: 110px;
+	font-family: var(--font-Playfair);
+}
+
+p{
+	color: #8e8e8e;
+	font-size: 18px;
+	font-family: var(--font-Lato);
+	line-height: 34px;
+	margin-bottom: 40px;
+}
+
+.container p:first-of-type::first-letter{
+	font-family: var(--font-Playfair);
+	font-size: 110px;
+	line-height: 90px;
+	color: #171717;
+	float: left; 
+	margin-right: 20px;
+}
+
+.italic{
+	font-size: 24px;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+.italic::before{
+	content: "“";
+	font-size: 60px;
+	margin: 0 20px 0 10px;
+}
+
+.buttom{
+	padding: 20px 75px;
+	color: #eaa258;
+	border: 2px solid;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.buttom:hover{
+	background: #eaa258;
+	border-color: #eaa258;
+	color: #fff;
+}
+
+
+
